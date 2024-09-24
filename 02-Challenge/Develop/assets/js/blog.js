@@ -1,6 +1,6 @@
 // TODO: Create a variable that selects the main element, and a variable that selects the back button element.
 const main = document.querySelector('main');
-const backButton = document.getElementById('backButton');
+const backButton = document.getElementById('back');
 
 // TODO: Create a function that builds an element and appends it to the DOM
 function createElement('p', {class:'entries'}, 'main', '') {

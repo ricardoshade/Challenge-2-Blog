@@ -85,6 +85,11 @@ section {
   border-left: double 1rem;
 }
 
+nav {
+  display: flex;
+  flex-direction: row;
+}
+
 /*
   Classes
 */

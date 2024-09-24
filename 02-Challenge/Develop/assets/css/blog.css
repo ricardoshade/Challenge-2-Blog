@@ -5,6 +5,17 @@
 /*
   Tags
 */
+
+.nav-contents {
+  display: flex;
+  justify-content: end;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+}
+
 a {
   text-decoration: none;
 }

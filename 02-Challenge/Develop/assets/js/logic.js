@@ -9,7 +9,19 @@ toggle.addEventListener('click', () => {
 });
 
 // TODO: Create a function called `readLocalStorage` that reads from local storage and returns the data. If no data exists, return an empty array.
-
+function readLocalStorage(key) {
+  const data = localStorage.getItem(key);
+  if (data) {
+    try {
+      return JSON.parse(data);
+    } catch (error) {
+      console.error("No data found:", error);
+      return [];
+    }
+  } else {
+    return[];
+  }
+}
 
 // TODO: Create a function called `storeLocalStorage` that takes a given object and saves the new data to the existing blog data in local storage.
 
